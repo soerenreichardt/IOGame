@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.*;
 
-@Component("server")
 public final class Server {
 
     private static final Server server = new Server();
@@ -18,6 +17,7 @@ public final class Server {
 
     private Server() {
         this.games = new HashMap<>();
+        System.out.println("foo");
     }
 
     /**
